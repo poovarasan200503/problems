@@ -43,7 +43,10 @@ class Operation
     
     public int div(int a,int b)
     {
-       
+        if(b==0)
+        {
+            return Integer.MAX_VALUE;
+        }
         int sign=((a<0)^(b<0))?-1:1;
         a=Math.abs(a);
         b=Math.abs(b);
